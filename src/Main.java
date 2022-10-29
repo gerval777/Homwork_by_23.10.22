@@ -6,7 +6,7 @@ public class Main {
 
         determiningleapYear(1999);   // Ввод: Год для проверки високосного года
         analysisClientDevice(1, 2017);  // Ввод: 0 для iOS и 1 для Android, Ввод: год устройства.
-        сalculationOfDeliveryTime(145); // Ввод: расстояние в км
+        сalculationOfDeliveryTime(18); // Ввод: расстояние в км
 
     }
 
@@ -68,16 +68,14 @@ public class Main {
         //Методы. Задача 3
         System.out.println("Методы. Задача 3");
 
-
-        int oneDay = 1;
         int nextDayKm = 40;
         int deliveryTime = (deliveryDistance - 20) / nextDayKm;
 
         if (deliveryDistance <= 20) {
-            System.out.println("Потребуется дней: " + oneDay);
+            System.out.println("Потребуется дней: " + 1);
             System.out.println();
         } else {
-            System.out.println("Потребуется дней: " + ((oneDay * 2) + deliveryTime));
+            System.out.println("Потребуется дней: " + (2 + deliveryTime));
             System.out.println();
         }
     }
