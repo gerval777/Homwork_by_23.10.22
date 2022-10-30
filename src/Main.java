@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        determiningleapYear(1999);   // Ввод: Год для проверки високосного года
+        determiningleapYear(2000);   // Ввод: Год для проверки високосного года
         analysisClientDevice(1, 2017);  // Ввод: 0 для iOS и 1 для Android, Ввод: год устройства.
         сalculationOfDeliveryTime(18); // Ввод: расстояние в км
 
@@ -14,8 +14,7 @@ public class Main {
     public static void determiningleapYear(int year) {
 //Методы. Задача 1
         System.out.println("Методы. Задача 1");
-        boolean leapYear = leapYearCalculations(year);
-        сheckingYear(year, leapYear);
+        сheckingYear(year);
         System.out.println();
     }
 
@@ -25,7 +24,8 @@ public class Main {
 
     }
 
-    private static void сheckingYear(int year, boolean leapYear) {
+    private static void сheckingYear(int year) {
+        boolean leapYear = leapYearCalculations(year);
         if (leapYear) {
             System.out.println(year + " — високосный год");
         } else {
